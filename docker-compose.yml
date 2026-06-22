@@ -1,0 +1,10 @@
+services:
+  flickle:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        VITE_TMDB_API_TOKEN: ${VITE_TMDB_API_TOKEN}
+    ports:
+      - "${FLICKLE_PORT:-8080}:80"
+    restart: unless-stopped

@@ -2,6 +2,11 @@
 
 Gra w zgadywanie filmu w stylu Wordle. Wyszukujesz tytuły z TMDB, a po każdej próbie dostajesz szczegółową kartę porównawczą z filmem dnia. Wygrywasz po trafieniu dokładnego tytułu.
 
+
+
+Vercel:  
+[https://flickle-nu.vercel.app/](https://flickle-nu.vercel.app/)
+
 ## Stack
 
 
@@ -122,8 +127,6 @@ vercel.json      # konfiguracja deployu na Vercel
 - **Frontend-only** — zapytania do TMDB idą z przeglądarki; klucz API jest widoczny w bundlu (akceptowalne na demo).
 - **Cache:** wyniki wyszukiwania i szczegóły filmów w pamięci; pula filmów dnia w `sessionStorage` (na czas sesji karty).
 - **Ochrona API:** min. 2 znaki przed wyszukiwaniem, debounce 300 ms, retry po HTTP 429.
-
-
 
 ## Podsumowanie
 
